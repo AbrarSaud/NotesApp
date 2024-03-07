@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/views/widgets/custom_logo.dart';
 import 'package:notes_app/views/widgets/custom_search_icon.dart';
 
 class CustomAppBarr extends StatelessWidget {
@@ -10,15 +11,7 @@ class CustomAppBarr extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 24),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        // crossAxisAlignment:CrossAxisAlignment.baseline ,
-        children: [
-          // nSpace50,
-          Text(
-            "Notes",
-            style: TextStyle(color: Colors.white, fontSize: 28),
-          ),
-          CustomSearchIcon()
-        ],
+        children: [CustomLogo(), CustomSearchIcon()],
       ),
     );
   }

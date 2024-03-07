@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/constants/colors.dart';
 
 class CustomSearchIcon extends StatelessWidget {
   const CustomSearchIcon({
@@ -12,11 +13,15 @@ class CustomSearchIcon extends StatelessWidget {
         width: 45,
         margin: const EdgeInsets.only(top: 10.0),
         decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.1),
+            color: primary.withOpacity(0.3),
             borderRadius: BorderRadius.circular(15.0)),
         child: IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.search, size: 28),
+          icon: const Icon(
+            Icons.search,
+            size: 28,
+            color: backgroundColor,
+          ),
         ));
   }
 }
