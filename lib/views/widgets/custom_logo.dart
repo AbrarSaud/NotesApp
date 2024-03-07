@@ -16,11 +16,10 @@ class CustomLogo extends StatelessWidget {
           color: primary.withOpacity(0.3),
           borderRadius: BorderRadius.circular(15.0)),
       child: Image.asset(
-        "assets/images/application.png",
+        "assets/images/icon_app.png",
       ),
     );
   }
 }
 
-          // const CustomSearchIcon()
 // 
